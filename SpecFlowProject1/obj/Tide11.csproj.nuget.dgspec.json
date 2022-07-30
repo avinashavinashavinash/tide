@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[17.2.0, )"
             },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.2.1, )"

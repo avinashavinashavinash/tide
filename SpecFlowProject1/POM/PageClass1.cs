@@ -9,12 +9,15 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support;
 using System.Threading;
 
+using Tide11.Utitlites;
+
 using Tide11.POM;
 
 namespace Tide11.POM
 {
     public class PageClass1
     {
+       
 
         public void LoadWebsite()
         {
@@ -48,7 +51,7 @@ namespace Tide11.POM
 
         public void ClickOnFirstLink()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
             BaseClass.driver.FindElement(By.XPath("//div[@class='ps-widget ps-59923902a81961211a377174 event_buy_now event_buy_now_choose_product ps-enabled'][1]")).Click();
         }
 
@@ -71,9 +74,12 @@ namespace Tide11.POM
 
         public void ScreenShot()
         {
+            ExcelSheet.excelRead ();
+
             ((ITakesScreenshot)BaseClass.driver).GetScreenshot().SaveAsFile(@"C:\Users\Avinash\source\repos\SpecFlowProject1\SpecFlowProject1\Support\new.png");
         }
 
 
     }
 }
+
